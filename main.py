@@ -135,6 +135,7 @@ class Trophy(Sprite):
         self.rect.bottomleft = (startx, starty)
 
     def update(self, player):
+        global LEVEL
         if pygame.sprite.collide_rect(self, player):
             if LEVEL == 1:
                 pygame.quit()
@@ -189,6 +190,7 @@ def rotate(player, boxes, folding_boxes):
 
 
 def play_level_one():
+    global LEVEL
     LEVEL = 1
     pygame.init()
     pygame.mixer.init()
@@ -231,6 +233,7 @@ def play_level_one():
                     rotate(player, boxes, folding_boxes)
 
 def play_level_two():
+    global LEVEL
     LEVEL = 2
     pygame.init()
     pygame.mixer.init()
@@ -275,6 +278,7 @@ def play_level_two():
                     rotate(player, boxes, folding_boxes)
 
 def play_level_three():
+    global LEVEL
     LEVEL = 3
     pygame.init()
     pygame.mixer.init()
