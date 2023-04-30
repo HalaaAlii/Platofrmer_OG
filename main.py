@@ -359,6 +359,10 @@ def clear_screen():
     button3.place(relx=0.5, rely=0.6, anchor="center")
 
 # create the "Start Game" button
+inst_label = tk.Label(root, text="The instructions are simple", font=("Comic Sans MS", 20))
+inst_label.place(relx=0.5, rely=0.1, anchor="center")
+insta_label2 = tk.Label(root, text="Use the arrow keys to move and jump, and use q to rotate", font=("Comic Sans MS", 20))
+insta_label2.place(relx=0.5, rely=0.2, anchor="center")
 button = tk.Button(root, text="Start Game", font=("Comic Sans MS", 35), command=clear_screen, width=100, height=5)
 button.place(relx=0.5, rely=0.5, anchor="center")
 
